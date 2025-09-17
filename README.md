@@ -1,16 +1,12 @@
-# telemedicine_sih
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Sehat SaathiSehat Saathi is a Flutter-based digital healthcare application designed to simplify health management for patients. It aims to provide a comprehensive, user-friendly platform for various healthcare needs, including online consultations, health record management, and symptom checking.Key FeaturesMultilingual Support: The app is localized to support English, Hindi, Bengali, and Malayalam.Doctor Consultation: Users can find and view detailed profiles of doctors across various specialties.Mock Video Consultation: A simulated video call interface with a live camera feed and a doctor placeholder.AI-Powered Symptom Checker: A conversational AI assistant helps users identify possible conditions and provides general health information.Digital Health Records: Users can save and manage their health records locally on the device with an option to add images.Pharmacy & Medicine Search: Search for medicines and check their availability at different pharmacies.Responsive UI: The application is designed to provide a seamless user experience on both mobile and tablet devices.Setup and InstallationPrerequisitesFlutter SDKAn IDE (e.g., VS Code or Android Studio) with Flutter and Dart plugins installed.Getting StartedClone the repository:git clone [your-repository-url]
+cd sehat_saathi
+Fetch the dependencies:flutter pub get
+Native PermissionsThe app requires specific permissions for the camera and microphone to enable the video consultation feature.AndroidAdd the following permissions to android/app/src/main/AndroidManifest.xml inside the <manifest> tag:<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+iOSAdd the following keys to ios/Runner/Info.plist:<key>NSCameraUsageDescription</key>
+<string>This app needs camera access to enable video consultations.</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>This app needs microphone access for video consultations.</string>
+Running the AppTo run the app, ensure an emulator or a physical device is connected, and run the following command in your terminal:flutter run
+CreditsUI/UX Design: Inspired by modern healthcare apps and designed for clarity and ease of use.Localization: Manually implemented for English, Hindi, Bengali, and Malayalam.AI Integration: Powered by the Google Gemini API for the Symptom Checker.
